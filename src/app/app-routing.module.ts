@@ -5,12 +5,11 @@ import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   { path: '', component: SearchComponent },
-  { path: 'details/:id', component: DetailsComponent }
+  { path: 'details/:id/:name/:color', component: DetailsComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {})],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule {
-}
+export class AppRoutingModule {}
